@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* CSS RESETS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Adding Different Font to Website */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+}
+
+/* Removes the Underline and The Blue color from the link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.top-banner {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+
+  background: url("/images/Cody-Fry-slim-banner-2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-banner-image {
+  flex: 0 0 0 25%;
+}
+
+.top-banner__image {
+  object-fit: contain;
+}
+
+.top-banner-texts {
+  width: 95%;
+  flex: 0 0 0 75%;
+  padding-left: 3rem;
+}
+
+.top-banner__title {
+  margin-bottom: 1rem;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.top-banner__desc {
+  font-weight: 400;
+  color: #fff;
+  max-width: 800px;
+}
+
+.playlist {
+  padding: 0 4rem;
+}
+
+.playlist__btn {
+  width: 188px;
+  height: 48px;
+  margin-top: 2rem;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #121212;
+  
+  cursor: pointer;
+  background-color: #1ed760;
+  border: #1ed760 solid 2px;
+  border-radius: 40px;
+}
+
+.playlist__btn:hover {
+  transform: scale(1.05);
+}
+
+.playlist-list {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 3rem;
+  color: #fff;
+  /* background-color: #1ed760; */
+  /* border: #1ed760 2px solid; */
+  border-radius: 10px;
+}
+
+li {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  color: #fff;
+}
+
+
+@media (max-width: 780px) {
+  .top-banner {
+    height: auto;
+    width: 100%;
+    
+    flex-flow: column nowrap;
+    padding: 4rem 0;
+  }
+
+  .top-banner__title {
+    margin-top: 2rem;
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  li {
+    width: 100%;
+    padding: 1rem;
+  }
+}
